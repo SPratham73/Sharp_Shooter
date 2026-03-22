@@ -112,5 +112,5 @@ AssetOrigin:
   productId: 321592
   packageName: Flying Drone Character
   packageVersion: 1.0
-  assetPath: Assets/3D Models/Characters/Robots/FlyingDrone/Meshes/FlyingDrone_Mesh.fbx
+  assetPath: Assets/Imported Packages/3D Models/Characters/Robots/FlyingDrone/Meshes/FlyingDrone_Mesh.fbx
   uploadId: 761089

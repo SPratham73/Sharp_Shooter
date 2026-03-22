@@ -13,5 +13,5 @@ AssetOrigin:
   productId: 321592
   packageName: Flying Drone Character
   packageVersion: 1.0
-  assetPath: Assets/3D Models/Characters/Robots/FlyingDrone/Example/Shaders/HologramShader.shadergraph
+  assetPath: Assets/Imported Packages/3D Models/Characters/Robots/FlyingDrone/Example/Shaders/HologramShader.shadergraph
   uploadId: 761089
