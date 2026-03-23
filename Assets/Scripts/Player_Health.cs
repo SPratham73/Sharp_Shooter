@@ -1,16 +1,25 @@
 using UnityEngine;
+using StarterAssets;
 
 public class Player_Health : MonoBehaviour
 {
     public int maxHealth = 10;
     int currentHealth;
-    Vector3 spawnPoint;
+    public Transform spawnPoint; 
+    CharacterController controller;
 
     void Start()
-    {
+     {
         currentHealth = maxHealth;
-        spawnPoint = transform.position;
+        controller = GetComponent<CharacterController>();
+
+        if (spawnPoint == null)
+        {
+            spawnPoint = new GameObject("SpawnPoint").transform;
+            spawnPoint.position = transform.position;
+        }
     }
+    
 
     public void TakeDamage(int damage)
     {
@@ -27,6 +36,14 @@ public class Player_Health : MonoBehaviour
     {
         Debug.Log("Game Over!!!");
         currentHealth = maxHealth;
-        transform.position = spawnPoint;
+        if (controller != null)
+        {
+            controller.enabled = false;
+        }
+        transform.position = spawnPoint.position;
+        if (controller != null)
+        {
+            controller.enabled = true;
+        }
     }
 }

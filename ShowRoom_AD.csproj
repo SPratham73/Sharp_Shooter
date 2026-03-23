@@ -49,12 +49,12 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.10f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Imported Packages\3D Models\Characters\Robots\FlyingDrone\Example\Scripts\SpritesShowRoom.cs" />
-    <Compile Include="Assets\Imported Packages\3D Models\Characters\Robots\FlyingDrone\Example\Scripts\ShowRoom.cs" />
-    <Compile Include="Assets\Imported Packages\3D Models\Characters\Robots\FlyingDrone\Example\Scripts\Editor\ShowRoomEditor.cs" />
+    <Compile Include="Assets\Imported Packages\Robots\FlyingDrone\Example\Scripts\ShowRoom.cs" />
+    <Compile Include="Assets\Imported Packages\Robots\FlyingDrone\Example\Scripts\Editor\ShowRoomEditor.cs" />
+    <Compile Include="Assets\Imported Packages\Robots\FlyingDrone\Example\Scripts\SpritesShowRoom.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Imported Packages\3D Models\Characters\Robots\FlyingDrone\Example\Scripts\ShowRoom_AD.asmdef" />
+    <None Include="Assets\Imported Packages\Robots\FlyingDrone\Example\Scripts\ShowRoom_AD.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
