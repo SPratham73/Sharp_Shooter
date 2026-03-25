@@ -1,17 +1,20 @@
 using UnityEngine;
 using TMPro;
+using StarterAssets;
 using UnityEngine.InputSystem;
 
 public class Collect_Chip : MonoBehaviour
 {
-     public float interactDistance = 5f;
+    public float interactDistance = 5f;
     public TextMeshProUGUI interactText;
 
     Camera cam;
+    StarterAssetsInputs inputs;
 
     void Start()
     {
         cam = Camera.main;
+        inputs = FindFirstObjectByType<StarterAssetsInputs>();
         interactText.text = "";
     }
 
@@ -24,19 +27,25 @@ public class Collect_Chip : MonoBehaviour
         {
             if (hit.collider.CompareTag("Chip"))
             {
-                interactText.text = "Press E to collect the chip";
+                
+                interactText.text = "Press E / Tap to collect the chip";
 
-               
-                if (Keyboard.current.eKey.wasPressedThisFrame)
+                bool mobileInput = (inputs != null && inputs.interact);
+                bool pcInput = Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame;
+
+                if (mobileInput || pcInput)
                 {
                     CollectChip(hit.collider.gameObject);
+
+                    // reset mobile input
+                    if (inputs != null)
+                        inputs.interact = false;
                 }
 
                 return;
             }
         }
 
-        // If not looking at chip
         interactText.text = "";
     }
 

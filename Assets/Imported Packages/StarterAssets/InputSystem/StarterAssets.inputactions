@@ -45,7 +45,7 @@
                 {
                     "name": "Shoot",
                     "type": "Button",
-                    "id": "ffee676a-4abc-4855-ac98-b9d44b1df3cd",
+                    "id": "e916e737-e157-485a-ac90-b2f3a38dc79a",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -231,7 +231,7 @@
                 },
                 {
                     "name": "",
-                    "id": "41b45756-d7d0-4205-a32b-7129bf05d355",
+                    "id": "0698d335-a99f-4097-9d22-0939c999e9e4",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
@@ -242,8 +242,8 @@
                 },
                 {
                     "name": "",
-                    "id": "3c1724e8-7079-4b69-8570-68b7332ecedb",
-                    "path": "<Gamepad>/rightTrigger",
+                    "id": "3762dd23-7bc6-4955-8363-0369b624d99a",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
