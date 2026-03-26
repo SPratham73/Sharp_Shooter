@@ -16,8 +16,7 @@ public class SimpleDialogue : MonoBehaviour
         "Ramirez: Any survivors?",
         "COMMANDER: No survivors. The robots have turned against us. You're the only one left who can handle this.",
         "Ramirez: Mission objective?",
-        "COMMANDER: Retrieve the core control chip from the central hub.",
-        "COMMANDER: That chip is critical to our Quantum-X mission. If we lose it, the entire operation fails.",
+        "COMMANDER: Retrieve the core control chip from the central hub. Once you have the chip, escape the station immediately.",
         "Ramirez: Understood. Commander!",
         "COMMANDER: Stay alert... those machines are no longer under our command.",
         "Ramirez: Copy that. Moving in."
